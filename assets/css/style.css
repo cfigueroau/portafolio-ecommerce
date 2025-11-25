@@ -1,0 +1,164 @@
+/* =========================================
+   1. CONFIGURACIÓN GENERAL E IMPORTACIONES
+   ========================================= */
+/* Importamos una fuente moderna (Poppins) similar a la imagen */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --brand-red: #e63946;    /* Color principal (Rojo Aments) */
+    --brand-dark: #212529;   /* Negro suave */
+    --brand-gray: #f8f9fa;   /* Fondo gris muy claro */
+    --text-muted: #6c757d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--brand-dark);
+    background-color: #fff;
+}
+
+/* Ajuste para que las imágenes no se deformen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================================
+   2. NAVBAR Y HEADER
+   ========================================= */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--brand-red) !important; /* Forzamos el rojo */
+}
+
+/* Iconos del header */
+.nav-link {
+    font-weight: 500;
+    color: var(--brand-dark);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-red) !important;
+}
+
+/* Badge del carrito */
+#contador-carrito {
+    background-color: var(--brand-red) !important;
+    font-size: 0.7rem;
+}
+
+/* =========================================
+   3. HERO CAROUSEL (BANNER)
+   ========================================= */
+#heroCarousel .carousel-item {    
+    height: 500px;               /* Altura fija para evitar saltos de contenido */
+    background-color: #333;    /* Fondo de carga */
+}
+
+#heroCarousel img {
+    object-fit: cover;          /* Recorta la imagen para llenar el espacio sin deformar */
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;               /* Un toque oscuro para que se lea el texto */
+}
+
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente como la imagen */
+    padding: 2rem;
+    color: var(--brand-dark);
+    bottom: 20%;
+    left: 10%;
+    text-align: left;
+    max-width: 500px;
+    border-radius: 4px;
+}
+
+/* Botones personalizados */
+.btn-danger {
+    background-color: var(--brand-red);
+    border-color: var(--brand-red);
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c92a35;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.3);
+}
+
+/* =========================================
+   4. TARJETAS (CATEGORÍAS Y PRODUCTOS)
+   ========================================= */
+
+/* Efecto Hover Genérico */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    border-color: var(--brand-red) !important;
+}
+
+/* Tarjeta de Producto */
+.card-producto {
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.card-producto:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.card-producto img {
+    height: 250px;
+    object-fit: contain; /* Muestra todo el producto dentro del cuadro */
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.precio-actual {
+    color: var(--brand-red);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+/* =========================================
+   5. FOOTER
+   ========================================= */
+footer {
+    background-color: #111;
+    font-size: 0.9rem;
+}
+
+footer h4 {
+    letter-spacing: 1px;
+}
+
+footer a:hover {
+    color: var(--brand-red) !important;
+    padding-left: 5px;      /* Pequeña animación al pasar el mouse */
+    transition: all 0.2s;
+}

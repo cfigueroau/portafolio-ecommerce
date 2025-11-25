@@ -1,11 +1,11 @@
 /* =========================================
    1. CONFIGURACIÓN GENERAL E IMPORTACIONES
    ========================================= */
-/* Importamos una fuente moderna (Poppins) similar a la imagen */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    --brand-red: #e63946;    /* Color principal (Rojo Aments) */
+    --brand-red: #e63946;    /* Color principal (Rojo) */
     --brand-dark: #212529;   /* Negro suave */
     --brand-gray: #f8f9fa;   /* Fondo gris muy claro */
     --text-muted: #6c757d;
@@ -65,7 +65,7 @@ img {
 }
 
 .carousel-caption {
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente como la imagen */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
     padding: 2rem;
     color: var(--brand-dark);
     bottom: 20%;

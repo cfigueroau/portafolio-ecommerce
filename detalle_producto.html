@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loki - Autopartes & Accesorios</title>
-    
+    <title>Detalle de Producto - Loki</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -36,7 +33,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
-                        <li class="nav-item"><a class="nav-link active text-danger" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Suspensión y Dirección</a></li>                        
                         <li class="nav-item"><a class="nav-link" href="#">Frenos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Electricidad</a></li>
@@ -60,96 +57,22 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container my-5 py-3">
         
-        <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://placehold.co/1920x600/333/FFF?text=Nuevos+Repuestos+2025" class="d-block w-100" alt="Banner Auto">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                        <h5 class="text-danger text-uppercase letter-spacing-2">Calidad Original</h5>
-                        <h1 class="display-3 fw-bold mb-3">Piezas de Alto<br>Rendimiento</h1>
-                        <button class="btn btn-danger btn-lg rounded-0 px-4">Ver Catálogo</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://placehold.co/1920x600/222/FFF?text=Ofertas+Neumaticos" class="d-block w-100" alt="Banner Oferta">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                        <h5 class="text-danger text-uppercase">Oferta Limitada</h5>
-                        <h1 class="display-3 fw-bold mb-3">50% OFF en<br>Neumáticos</h1>
-                        <button class="btn btn-danger btn-lg rounded-0 px-4">Comprar Ahora</button>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-        </section>
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item active text-danger" aria-current="page">Detalle de Producto</li>
+            </ol>
+        </nav>
 
-        <section class="container my-5">
-            <div class="d-flex justify-content-between align-items-end mb-4">
-                <div>
-                    <h6 class="text-danger fw-bold text-uppercase">Categorías</h6>
-                    <h2 class="fw-bold">Busca por pieza</h2>
+        <div id="detalle-producto" class="row">
+            <div class="col-12 text-center py-5">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Cargando...</span>
                 </div>
             </div>
-
-            <div class="row g-3">
-                <div class="col-6 col-md-3">
-                    <div class="border p-4 text-center hover-effect bg-light">
-                        <i class="fas fa-car-battery fa-3x text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Baterías</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="border p-4 text-center hover-effect bg-light">
-                        <i class="fas fa-cogs fa-3x text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Motor</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="border p-4 text-center hover-effect bg-light">
-                        <i class="fas fa-tools fa-3x text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Herramientas</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="border p-4 text-center hover-effect bg-light">
-                        <i class="fas fa-oil-can fa-3x text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Fluidos</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container my-5 py-4">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <div>
-                    <h6 class="text-danger fw-bold text-uppercase">Productos</h6>
-                    <h2 class="fw-bold">Productos en Oferta</h2>
-                </div>
-                <a href="#" class="btn btn-outline-dark rounded-0">Ver Todo</a>
-            </div>
-
-            <div id="contenedor-productos" class="row g-4">
-                <div class="col-12 text-center py-5">
-                    <div class="spinner-border text-danger" role="status">
-                        <span class="visually-hidden">Cargando...</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-light py-5">
-            <div class="container text-center">
-                <h2 class="display-5 fw-bold mb-3">¿Buscas algo específico?</h2>
-                <p class="lead text-muted mb-4">Tenemos más de 5.000 repuestos en stock listos para enviar.</p>
-                <button class="btn btn-dark btn-lg rounded-0">Contactar a Ventas</button>
-            </div>
-        </section>
+        </div>
 
     </main>
 
@@ -199,7 +122,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="assets/js/main.js"></script>
 </body>
 </html>

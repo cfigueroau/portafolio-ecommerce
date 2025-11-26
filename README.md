@@ -1,6 +1,6 @@
 # portafolio-ecommerce
 
-La aplicación simula un flujo de compra básico, incluyendo un catálogo dinámico renderizado con JavaScript, una página de detalle de producto y un carrito de compras interactivo, todo estilizado con **Bootstrap 5**.
+La aplicación simula un flujo de compra básico, incluyendo un catálogo dinámico renderizado con JavaScript, una página de detalle de producto y un carrito de compras interactivo.
 
 ## 🚀 Funcionalidades Principales
 
@@ -18,4 +18,6 @@ La aplicación simula un flujo de compra básico, incluyendo un catálogo dinám
 * **JavaScript (ES6):** Lógica de negocio, manipulación del DOM y manejo de `URLSearchParams`.
 * **Git/GitHub:** Control de versiones y repositorio remoto.
 
-Desarrollado por [Claudio Figueroa](https://github.com/cfigueroau/portafolio-ecommerce).
+Puedes ver el código fuente en: https://github.com/cfigueroau/portafolio-ecommerce
+
+Desarrollado por [Claudio Figueroa]
